@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<title>CPS323: Ruby Case Study</title>
@@ -19,11 +21,12 @@
  
 <body>
 
-<div id="shadow">
 <div id="container">
+	
 	<div id="logo">
 		<img src="logo.gif" alt="logo"/>
 	</div>
+	
 	<div id="quote">
 		&ldquo;Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write&rdquo; (http://www.ruby-lang.org/, 2009).
 	</div>
@@ -31,72 +34,51 @@
 	<div id="nav">
 	<h2>About Ruby</h2>
 		<ul>
-			<li><a href="" onclick="toggleIt('ReservedWords'); return false;">Purpose / Language Domain</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">History</a></li>
-			<li><a href="" onclick="toggleIt('OnlineReferences'); return false;">Online References</a></li>
+			<li><a href="" onclick="toggleIt('reservedwords'); return false;">Purpose / Language Domain</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">History</a></li>
+			<li><a href="" onclick="toggleIt('onlinereferences'); return false;">Online References</a></li>
 		</ul>
 	<h2>Language Features</h2>
 		<ul>
-			<li><a href="" onclick="toggleIt('History'); return false;">Identifiers</a></li>
-			<li><a href="" onclick="toggleIt('ReservedWords'); return false;">Reserved Words</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Data Types</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Data Structures</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Expressions</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Control Structures</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Input/Output Facilities</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Threading</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Networking</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Metaprogramming</a></li>
+			<li><a href="" onclick="toggleIt('identifiers'); return false;">Identifiers</a></li>
+			<li><a href="" onclick="toggleIt('reservedwords'); return false;">Reserved Words</a></li>
+			<li><a href="" onclick="toggleIt('datatypes'); return false;">Data Types</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Data Structures</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Expressions</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Control Structures</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Input/Output Facilities</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Threading</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Networking</a></li>
+			<li><a href="" onclick="toggleIt('history'); return false;">Metaprogramming</a></li>
 		</ul>
 	<h2>Development</h2>
 		<ul>
-			<li><a href="" onclick="toggleIt('History'); return false;">Writing Scripts</a></li>
-			<li><a href="" onclick="toggleIt('History'); return false;">Interactive Ruby (IRB)</a></li>
+			<li><a href="" onclick="toggleIt('writingscripts'); return false;">Writing Scripts</a></li>
+			<li><a href="" onclick="toggleIt('interactiveruby'); return false;">Interactive Ruby (IRB)</a></li>
 		</ul>
 	</div>
 
 	
 	<div id="content">
-		<div id="ReservedWords" style="display: none;">
+		<div id="reservedwords" style="display: none;">
 			<h2>Reserved Words</h2>
-			<pre>alias   and     BEGIN   begin   break   case    class   def     defined 
+<pre>
+alias   and     BEGIN   begin   break   case    class   def     defined 
 do      else    elsif   END     end     ensure  false   for     if 
 in      module  next    nil     not     or      redo    rescue  retry 
 return  self    super   then    true    undef   unless  until   when 
-while   yield</pre>
+while   yield
+</pre>
 		</div>
-		<div id="History" style="display: none;">
+		<div id="history" style="display: none;">
 			<h2>History</h2>
 			<p>Ruby is a language of careful balance. Its creator, Yukihiro "matz" Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.</p>
 			<p>He has often said that he is "trying to make Ruby natural, not simple," in a way that mirrors life.</p>
 			<p>Building on this, he adds:</p>
 			<blockquote><p>"Ruby is simple in appearance, but is very complex inside, just like our human body."</p></blockquote>
-			<p>Ruby-Talk, the primary mailing list for discussion of the Ruby language has climbed to an average of 200 messages per day.</p>
-			<p>The TIOBE index, which measures the growth of programming languages, ranks Ruby as #9 among programming languages worldwide.  Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework.</p>
-			<p>Ruby is also totally free.  Not only free of charge, but also free to use, copy, modify, and distribute.</p>
-			<p>Ruby is a language of careful balance. Its creator, Yukihiro "matz" Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.</p>
-			<p>He has often said that he is "trying to make Ruby natural, not simple," in a way that mirrors life.</p>
-			<p>Building on this, he adds:</p>
-			<blockquote><p>"Ruby is simple in appearance, but is very complex inside, just like our human body."</p></blockquote>
-			<p>Ruby-Talk, the primary mailing list for discussion of the Ruby language has climbed to an average of 200 messages per day.</p>
-			<p>The TIOBE index, which measures the growth of programming languages, ranks Ruby as #9 among programming languages worldwide.  Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework.</p>
-			<p>Ruby is also totally free.  Not only free of charge, but also free to use, copy, modify, and distribute.</p>
-			<p>Ruby is a language of careful balance. Its creator, Yukihiro "matz" Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.</p>
-			<p>He has often said that he is "trying to make Ruby natural, not simple," in a way that mirrors life.</p>
-			<p>Building on this, he adds:</p>
-			<blockquote><p>"Ruby is simple in appearance, but is very complex inside, just like our human body."</p></blockquote>
-			<p>Ruby-Talk, the primary mailing list for discussion of the Ruby language has climbed to an average of 200 messages per day.</p>
-			<p>The TIOBE index, which measures the growth of programming languages, ranks Ruby as #9 among programming languages worldwide.  Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework.</p>
-			<p>Ruby is also totally free.  Not only free of charge, but also free to use, copy, modify, and distribute.</p>
-			<p>Ruby is a language of careful balance. Its creator, Yukihiro "matz" Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.</p>
-			<p>He has often said that he is "trying to make Ruby natural, not simple," in a way that mirrors life.</p>
-			<p>Building on this, he adds:</p>
-			<blockquote><p>"Ruby is simple in appearance, but is very complex inside, just like our human body."</p></blockquote>
-			<p>Ruby-Talk, the primary mailing list for discussion of the Ruby language has climbed to an average of 200 messages per day.</p>
-			<p>The TIOBE index, which measures the growth of programming languages, ranks Ruby as #9 among programming languages worldwide.  Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework.</p>
-			<p>Ruby is also totally free.  Not only free of charge, but also free to use, copy, modify, and distribute.</p>
+			<p>Ruby was conceived on February 24, 1993. Matsumoto wished to create a new language that balanced functional programming with imperative programming. According to Matsumoto he "wanted a scripting language that was more powerful than Perl, and more object-oriented than Python. That's why I decided to design my own language".</p>
 		</div>
-		<div id="OnlineReferences" style="display: none;">
+		<div id="onlinereferences" style="display: none;">
 			<h2>Online References</h2>
 			<ul>
 			  <li><a href="http://www.ruby-lang.org/">Official Ruby Web Site</a></li>
@@ -106,92 +88,57 @@ while   yield</pre>
 			  <li><a href="http://www.pragprog.com/screencasts/v-dtrubyom/the-ruby-object-model-and-metaprogramming">Screencasts teaching Metaprogramming with Ruby</a></li>
 			</ul>
 		</div>
+		<div id="identifiers" style="display: none;">
+			<h2>Identifiers</h2>
+			<p>Identifiers in Ruby consist of letters, digits, and the underscore character. Identifiers may start with either letters or an underscore. There is no restriction on length.</p>
+			<p>Examples:</p>
+<pre>
+foobar 
+ruby_is_simple
+</pre>
+		</div>
+		<div id="datatypes" style="display: none;">
+			<h2>Data Types</h2>
+			<p>Simple and straight forward. Everything and their mom is an object. Everything has a class.</p>
+			<p>So all that stuff you learned with other languages? Yeah, forget that. Primitives? No more.</p>
+<pre>
+h = {"hash?" => "yep, it's a hash!", "the answer to everything" => 42}
+puts "Stringy string McString!".class
+puts 1.class
+puts nil.class
+puts h.class
+puts :symbol.class
+</pre>
+		</div>
+		<div id="datastructures" style="display: none;">
+			
+		</div>
+		<div id="writingscripts" style="display: none;">
+			<h2>Writing Scripts</h2>
+			<p>
+			  Use gedit on the linux workstations, because its light and has ruby syntax highlighting.
+			</p>
+			<p>
+			  you can run stuff like this:
+			</p>
+			<p><code>
+			ruby script.rb
+			</code></p>
+			or declare the interpreter type within the script:
+			<p><code>
+			#! /usr/bin/ruby<br/>
+			puts "Hello World!"<br/>
+			</code></p>
+			and then (making the file executable) run it like an executable:
+			<p><code>
+			./script.rb
+			</code></p>
+		</div>
+		<div id="interactiveruby" style="display: none;">
+			<h2>Interactive Ruby (IRB)</h2>
+			<p>Interactive ruby is a useful tool for familiarizing yourself with ruby. All you need to do it type "<code>irb</code>" into the terminal and you're interactin' with ruby. BAM!</p>
+		</div>
 	</div>
-
-
-
-
-
-
-
-
-	<div id="temp">
-	<h3>Purpose / Language Domain</h3>
-	<p>
-	  &ldquo;Ruby is a dynamic, open source programming language with a focus on simplicity and productivity.
-	  It has an elegant syntax that is natural to read and easy to write.&rdquo; (http://www.ruby-lang.org/, 2009).
-	</p>
- 
-	<h3>History</h3>
- 
-	<h2>Online References</h2>
-	<ul>
-	  <li><a href="http://www.ruby-lang.org/">Official Ruby Web Site</a></li>
-	  <li><a href="http://www.ruby-lang.org/en/documentation/quickstart/">Official Ruby Quick Start Guide</a></li>
-	  <li><a href="http://tryruby.hobix.com/">Interactive Ruby Tutorial</a></li>
-	  <li><a href="http://poignantguide.net/ruby/">Why&rsquo;s Poignant Guide to Ruby</a></li>
-	  <li><a href="http://www.pragprog.com/screencasts/v-dtrubyom/the-ruby-object-model-and-metaprogramming">Screencasts teaching Metaprogramming with Ruby</a></li>
-	</ul>
- 
-	<h2>Language Features</h2>
-	<h3>Identifiers</h3>
-
-	<div>
-	<a href="#" onclick="Effect.toggle('ReservedWords','appear'); return false;">Reserved Words</a>
-	<div id="servedWords" style="display: none;">
-		alias   and     BEGIN   begin   break   case    class   def     defined<br/> 
-		do      else    elsif   END     end     ensure  false   for     if<br/>
-		in      module  next    nil     not     or      redo    rescue  retry<br/> 
-		return  self    super   then    true    undef   unless  until   when<br/>
-		while   yield
-	</div></div>
-
-
-	<h3>Data Types Supported</h3>
-	<h4>Constants</h4>
- 
-	<h4>Primitive</h4>
- 
-	<h4>User-Defined</h4>
- 
- 
-	<h3>Data Structures Supported</h3>
- 
-	<h3>Expressions</h3>
- 
-	<h3>Control Structures</h3>
- 
-	<h3>Input/Output Facilities</h3>
- 
-	<h3>Threading</h3>
- 
-	<h3>Networking</h3>
- 
-	<h3>Metaprogramming</h3>
- 
-	<h2>Development</h2>
-	<h3>Writing Scripts</h3>
-	<p>
-	  use gedit, because its light and has ruby syntax highlighting.
-	</p>
-	<p>
-	  you can run stuff like this:
-	</p>
-	<p><code>
-	ruby script.rb
-	</code></p>
-	or declare the interpreter type within the script:
-	<p><code>
-	#! /usr/bin/ruby<br/>
-	puts "Hello World!"<br/>
-	</code></p>
-	and then (making the file executable) run it like an executable:
-	<p><code>
-	./script.rb
-	</code></p>
-	<h3>Interactive RuBy (IRB)</h3>
-	</div>
-</div>
 </div>
 </body>
 </html>
